@@ -20,7 +20,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__PostgreSqlConnection=Host=postgres;Database=MyDB;Username=postgres;Password=password
     ports:
-      - "5000:80"
+      - "5000:8080"
     depends_on:
       - postgres
 

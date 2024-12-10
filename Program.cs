@@ -29,14 +29,14 @@ using (var scope = app.Services.CreateScope())
     var dbContext = services.GetRequiredService<ApplicationDbContext>();
 
     try
-    {        
+    {
         dbContext.Database.Migrate();
     }
     catch (Exception ex)
     {
         var logger = services.GetRequiredService<ILogger<Program>>();
         logger.LogError(ex, "Ocurrió un error al aplicar las migraciones de la base de datos.");
-        throw;
+        
     }
 }
 

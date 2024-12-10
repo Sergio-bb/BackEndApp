@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEndApp", "BackEndApp.csproj", "{553388BD-22A4-4305-B900-1E4D96923716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEndApp", "BackEndApp.csproj", "{553388BD-22A4-4305-B900-1E4D96923716}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{A8D22584-4C08-479C-8F7A-0D79797964DD}"
 	ProjectSection(SolutionItems) = preProject
 		docker-comose.yml = docker-comose.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEndApp.Test", "..\BackEndApp.Test\BackEndApp.Test.csproj", "{CDE1E658-FF7B-4A75-AAC0-8CE513858139}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{553388BD-22A4-4305-B900-1E4D96923716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{553388BD-22A4-4305-B900-1E4D96923716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{553388BD-22A4-4305-B900-1E4D96923716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE1E658-FF7B-4A75-AAC0-8CE513858139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE1E658-FF7B-4A75-AAC0-8CE513858139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE1E658-FF7B-4A75-AAC0-8CE513858139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE1E658-FF7B-4A75-AAC0-8CE513858139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

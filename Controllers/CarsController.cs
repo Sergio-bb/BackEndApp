@@ -10,7 +10,12 @@ namespace BackEndApp.Controllers
     public class CarsController(ILogger<CarsController> logger, IBrandService brandService) : ControllerBase
     {
 
-        [HttpGet("[action]")]
+        [HttpGet("api/[action]")]
+        [ProducesResponseType(typeof(BaseResponse<object>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(
+            typeof(BaseResponse<List<Brand>>),
+            StatusCodes.Status200OK
+        )]        
         public async Task<IActionResult> GetBrands()
         {
             try
@@ -20,6 +25,7 @@ namespace BackEndApp.Controllers
             }
             catch (Exception e)
             {
+                logger.LogError(e.Message, e);
                 return BadRequest(new BaseResponse<object>(true, "something has gone wrong, try again.", null));
             }
         }
